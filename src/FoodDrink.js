@@ -6,13 +6,13 @@ import { useNavigation } from '@react-navigation/native'
 import {firebase} from '../config'
 import { ScrollView } from 'react-native-gesture-handler';
 
-const CurrentDate = () => {
-  const today = new Date();
-  const options = { weekday: 'long', month: 'long', day: 'numeric' };
-  const dateString = new Intl.DateTimeFormat('en-US', options).format(today);
+// const CurrentDate = () => {
+//   const today = new Date();
+//   const options = { weekday: 'long', month: 'long', day: 'numeric' };
+//   const dateString = new Intl.DateTimeFormat('en-US', options).format(today);
 
-  return <Text style={styles.Date}>{dateString}</Text>;
-};
+//   return <Text style={styles.Date}>{dateString}</Text>;
+// };
 
 const FoodDrink = () => {
 
@@ -75,7 +75,6 @@ const FoodDrink = () => {
   return (
     <ScrollView>
     <View style = {{flex:1, justifyContent:'center', alignItems:'center'}}>
-      <Text style={styles.Date}><CurrentDate></CurrentDate></Text>
       <View style={styles.newcontainer}>
       <Text style={styles.Headline4}>Calories Consumed</Text>
       <Text style={styles.Headline2Black}>{caloriesConsumed}</Text>

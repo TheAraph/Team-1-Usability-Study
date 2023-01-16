@@ -7,13 +7,13 @@ import { ScrollView } from 'react-native-gesture-handler'
 import { RefreshControl } from 'react-native';
 
 //date functionality
-const CurrentDate = () => {
-  const today = new Date();
-  const options = { weekday: 'long', month: 'long', day: 'numeric' };
-  const dateString = new Intl.DateTimeFormat('en-US', options).format(today);
+// const CurrentDate = () => {
+//   const today = new Date();
+//   const options = { weekday: 'long', month: 'long', day: 'numeric' };
+//   const dateString = new Intl.DateTimeFormat('en-US', options).format(today);
 
-  return <Text style={styles.Date}>{dateString}</Text>;
-};
+//   return <Text style={styles.Date}>{dateString}</Text>;
+// };
 
 const Home = () => {
   const [name, setName] = useState('')
@@ -94,7 +94,7 @@ const Home = () => {
     <ScrollView>
     
         <View style={styles.container}>
-        <Text style={styles.Date}><CurrentDate /></Text>
+        {/* <Text style={styles.Date}><CurrentDate /></Text> */}
           <Text style={styles.Healthify}>Welcome,</Text>
           <Text style={styles.HealthifyUserName}>{name.firstName}</Text>
 
