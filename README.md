@@ -26,9 +26,9 @@ This is the repository that will be used for the Team 1 Usability Study for our 
 
 3. Find and log your calorie and water intake, as well as resetting the logs back to 0
 
-4. Find and click on the external resources
+4. Find and click on the resources
 
-5. Navigate and experiment using the profile panel
+5. Navigate and experiment using the profile tab - change your password, check the about, and click the contact email
 
 # The Survey
 
