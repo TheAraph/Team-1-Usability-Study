@@ -31,7 +31,7 @@ const LogWeight = () => {
         .then(function() {
             console.log("Weight successfully updated!");
             alert('Weight successfully updated!')
-            navigation.navigate('Health');
+            navigation.navigate('Home');
         })
         .catch(function(error) {
             console.error("Error updating weight: ", error);

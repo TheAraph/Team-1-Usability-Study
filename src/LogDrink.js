@@ -26,12 +26,12 @@ const LogDrink = () => {
       const updateWater = () => {
         const db = firebase.firestore();
         db.collection("users").doc(firebase.auth().currentUser.uid).update({
-            waterDrank: waterDrank
+            waterDrank: firebase.firestore.FieldValue.increment(parseFloat(waterDrank))
         })
         .then(function() {
             console.log("Water Drank successfully updated!");
             alert('Water Drank successfully updated!')
-            navigation.navigate('Health');
+            navigation.navigate('Home');
         })
         .catch(function(error) {
             console.error("Error updating Water Drank: ", error);

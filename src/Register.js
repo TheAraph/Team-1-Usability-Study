@@ -162,11 +162,12 @@ return(
                 }}>Already registered? Go back to Login</Text>
             
         </TouchableOpacity>
-        </View>
-        <View style = {{marginTop:40}}>
+    </View>
+    </View>
+        <View style = {{marginBottom: 300}}>
         <Text style={styles.Headline4}></Text>
         </View>
-    </View>
+        <View><Text></Text></View>
     </ScrollView>
 )
               }

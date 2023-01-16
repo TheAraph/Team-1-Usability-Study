@@ -26,12 +26,12 @@ const LogFood = () => {
       const updateFood = () => {
         const db = firebase.firestore();
         db.collection("users").doc(firebase.auth().currentUser.uid).update({
-            caloriesConsumed: caloriesConsumed
+            caloriesConsumed: firebase.firestore.FieldValue.increment(parseInt(caloriesConsumed))
         })
         .then(function() {
             console.log("Calories Consumed successfully updated!");
             alert('Calories Consumed successfully updated!')
-            navigation.navigate('Health');
+            navigation.navigate('Home');
         })
         .catch(function(error) {
             console.error("Error updating Calories Consumed: ", error);

@@ -64,7 +64,7 @@ const FoodDrink = () => {
           waterDrank: 0
         }).then(() => {
           alert('Values Reset');
-          navigation.navigate('Health');
+          navigation.navigate('Home');
         });
       } catch (error) {
         console.error(error);
