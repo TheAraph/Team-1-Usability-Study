@@ -30,8 +30,11 @@ This is the repository that will be used for the Team 1 Usability Study for our 
 
 5. Navigate and experiment using the profile tab - change your password, check the about, and click the contact email
 
+6. Navigate around the app as you like :), when you feel ready, move to the next section
+
 # The Survey
 
 The survey can be found in 2 places, you can either answer on your phone through the Resources page on the app, or you can access it through this link:
+https://docs.google.com/forms/d/e/1FAIpQLSfV1mDgvAM1WyP96T-Ngw5j5TfaUIbuOzZxFshwc7ntmLnZcA/viewform?usp=sf_link
 
 This survey will take you around 2-5 minutes to complete. Feel free to point out any problems you found during testing the usability of the app.
