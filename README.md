@@ -22,13 +22,25 @@ This is the repository that will be used for the Team 1 Usability Study for our 
 
 1. Sign Up, Set Your Details & Log In
 
+![325607785_3254029104847696_4717772633681953785_n](https://user-images.githubusercontent.com/82602343/212748119-b3bc7e9c-1545-46f6-a343-ca1f0f109e7d.jpg)
+
+![325422882_740171850870700_2866124280823172114_n](https://user-images.githubusercontent.com/82602343/212748262-f1cfec01-4db2-4597-8d0f-ac907735ac3e.jpg)
+
 2. Find and check your weight progress, as well as logging your new current weight
+
+![325713648_610996017698976_2937404975179210535_n](https://user-images.githubusercontent.com/82602343/212748171-e7ce0d31-a591-4ae0-a526-11924783d2ef.jpg)
 
 3. Find and log your calorie and water intake, as well as resetting the logs back to 0
 
+![325713648_610996017698976_2937404975179210535_n](https://user-images.githubusercontent.com/82602343/212748193-2a08c705-1999-4692-8ff7-46b54f352cf8.jpg)
+
 4. Find and click on the resources
 
+![325689338_6583572841656084_3099049226150815602_n](https://user-images.githubusercontent.com/82602343/212748209-f0be62a9-d049-4a8e-b889-939b3ba82c00.jpg)
+
 5. Navigate and experiment using the profile tab - change your password, check the about, and click the contact email
+
+![325888926_541225684628071_5709559879312471194_n](https://user-images.githubusercontent.com/82602343/212748229-3bd0ba1f-020a-45bd-80c8-637aff3be70e.jpg)
 
 6. Navigate around the app as you like :), when you feel ready, move to the next section
 
