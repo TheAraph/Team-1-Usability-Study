@@ -22,7 +22,7 @@ This is the repository that will be used for the Team 1 Usability Study for our 
 
 1. Sign Up, Set Your Details & Log In
 
-![325607785_3254029104847696_4717772633681953785_n](https://user-images.githubusercontent.com/82602343/212748119-b3bc7e9c-1545-46f6-a343-ca1f0f109e7d.jpg)
+![325607785_3254029104847696_4717772633681953785_n](https://user-images.githubusercontent.com/82602343/212748119-b3bc7e9c-1545-46f6-a343-ca1f0f109e7d.jpg | height=100)
 
 ![325422882_740171850870700_2866124280823172114_n](https://user-images.githubusercontent.com/82602343/212748262-f1cfec01-4db2-4597-8d0f-ac907735ac3e.jpg)
 
