@@ -2,6 +2,20 @@
 
 This is the repository that will be used for the Team 1 Usability Study for our app "Healthify" on 18/01/2023 for CIS3186 : Mobile Device Programming This app uses Expo Go, Visual Studio Code, React-Native, and Firebase.
 
+If you are on ***iOS*** please download the code from our master branch, as there is no other way to access our app. If you are on ***Android***, you can try using the QR code below to access our app, if this doesn't work please download the code as well:
+
+![323078594_468043145354883_3846280822976004103_n](https://user-images.githubusercontent.com/82602343/213135155-f9c29efa-3ee8-4a6b-8b8a-8c231712877f.png)
+
+If you end up downloading the code, please note that to get it running you must:
+
+1. Open VSCode
+
+2. Open the terminal and make sure that your directory is set to the code path
+
+3. Run the command "npm install expo"
+
+4. Run the command "npx expo start" or "expo start"
+
 # Objectives of the Study
 
 1. To determine the ease of navigation within the app: This objective will help identify if the layout, buttons, and menus are intuitive and easy for you to understand and use.
