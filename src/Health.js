@@ -12,6 +12,7 @@ import LogWeight from "../src/LogWeight";
 import LogDrink from "../src/LogDrink";
 import LogFood from "../src/LogFood";
 import { TouchableOpacity } from 'react-native-gesture-handler';
+import LinearGradient from 'react-native-linear-gradient';
 
 const Stack = createStackNavigator();
 
@@ -24,18 +25,23 @@ const Health = () => {
           component={() => (
             <View style = {{flex:1, justifyContent:'center', alignItems:'center'}}>
               <TouchableOpacity style = {styles.card} onPress = {() => navigation.navigate('Weight')}>
-              <Image  
-              source = {require('../assets/img_245669.png')}
-              style = {styles.image}>
-              </Image>
-                <Text style = {styles.btntext}>Weight</Text>
+                <View style={styles.rightContainer}>
+                  <Image  
+                    source = {require('../assets/img_245669.png')}
+                    style = {styles.image}>
+                  </Image>
+                </View>
+                <View style={styles.leftContainer}>
+                  <Text style = {styles.btntext}>Weight</Text>
+                </View>
               </TouchableOpacity>
               <TouchableOpacity style = {styles.card} onPress = {() => navigation.navigate('FoodDrink')}>
-              <Image  
+              <View style={styles.rightContainer}><Image  
               source = {require('../assets/icone-de-nourriture-noire-symbole-png.png')}
               style = {styles.image}>
-              </Image>
-                <Text style = {styles.btntext}>Food {'\n'}& Drink</Text>
+              </Image></View>
+              <View style={styles.leftContainer}><Text style = {styles.btntext}>Food {'\n'}& Drink</Text></View>
+                
               </TouchableOpacity>
             </View>
           )}
@@ -121,7 +127,7 @@ const styles = StyleSheet.create({
     fontSize: 34,
     fontWeight: 'bold',
     color: '#fff',
-    right: 75
+    textAlign: "center"
   },
   button:{
     alignItems: 'center',
@@ -182,32 +188,46 @@ const styles = StyleSheet.create({
       width: 341,
       height: 177, 
       borderRadius: 30,
-      elevation: 3,
-      backgroundColor: '#D5342B',
       marginBottom: 25,
       shadowColor: '#000',
-      shadowOffset: { width: 0, height: 2 },
-      shadowOpacity: 1,
-      shadowRadius: 10,
-      elevation: 25,
+    shadowOffset: { width: 0, height: 0 },
+    shadowOpacity: 1,
+    shadowRadius: 5,
+    elevation: 25,
       borderWidth: 2,
     borderColor: 'black',
+    position: "relative"
   },
-  rightContainer:{
-    backgroundColor: '#96d0e3'
+  leftContainer: {
+    position: 'absolute',
+    borderBottomLeftRadius: 30,
+    borderTopLeftRadius: 30,
+    left: 0,
+    width: '50%',
+    height: '100%',
+    backgroundColor: '#D5342B',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  rightContainer: {
+    position: 'absolute',
+    borderBottomRightRadius: 30,
+    borderTopRightRadius: 30,
+    right: 0,
+    width: '50%',
+    height: '100%',
+    backgroundColor: 'white',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   image: {
     position: 'absolute',
-    top: 35,
-    left: 200,
-    right: 0,
-    bottom: 0,
     width: 100,
     height: 100,
-    shadowColor: '#FFF',
+    shadowColor: '#000',
     shadowOffset: { width: 0, height: 0 },
-    shadowOpacity: 1,
-    shadowRadius: 1,
-    elevation: 25,
+    shadowOpacity: 0.5,
+    shadowRadius: 2,
+    elevation: 2,
   }
 })

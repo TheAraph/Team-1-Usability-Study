@@ -1,4 +1,4 @@
-import { View, Text, TouchableOpacity, TextInput, StyleSheet } from 'react-native'
+import { View, Text, TouchableOpacity, TextInput, StyleSheet, Image } from 'react-native'
 import React, {useState} from 'react'
 import { useNavigation } from '@react-navigation/native'
 import {firebase} from '../config'
@@ -32,6 +32,14 @@ const Login = () => {
 
   return (
     <View style = {styles.container}>
+    <Image
+    source={require('../assets/health-clipart-transparent-1.png')}
+    style = {{height: 80, width: 80, marginTop: 20,shadowColor: '#000',
+    shadowOffset: { width: 0, height: 0 },
+    shadowOpacity: .5,
+    shadowRadius: 2,
+    elevation: 25,}}>
+    </Image>
         <Text style={styles.Headline4}>Welcome to</Text>
         <Text style={styles.Healthify}>Healthify</Text>
         <View style = {{marginTop: 40}}>
@@ -135,6 +143,11 @@ const styles = StyleSheet.create({
       margin: 10,
       borderWidth: 1,
       borderColor: "black",
+      shadowColor: '#000',
+      shadowOffset: { width: 0, height: 0 },
+      shadowOpacity: .5,
+      shadowRadius: 3,
+      elevation: 25,
     },
     ButtonText:{
       fontFamily: "AvenirNext-Heavy",
@@ -163,7 +176,7 @@ const styles = StyleSheet.create({
       fontFamily: "Avenir",
       fontSize: 34,
       color: "#000",
-      marginTop: 70,
+      marginTop: 10,
       alignItems: "center"
     },
     Headline4Courier:{

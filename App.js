@@ -120,7 +120,13 @@ function App(){
         activeTintColor: '#D5342B',
         inactiveTintColor: 'grey',
         tabBarVisible: false,
-        labelStyle: { fontSize: 15}
+        // height: 80,
+        // borderTopLeftRadius: 30,
+        // borderTopRightRadius: 30,
+        labelStyle: { fontFamily: 'Avenir',
+        fontSize: 14,
+        color: '#000000',
+        }
     }}
 
     >

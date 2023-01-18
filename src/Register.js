@@ -1,4 +1,4 @@
-import { View, Text, TouchableOpacity, TextInput, StyleSheet } from 'react-native'
+import { View, Text, TouchableOpacity, TextInput, StyleSheet, Image } from 'react-native'
 import React, {useState} from 'react'
 import { useNavigation } from '@react-navigation/native'
 import {firebase} from '../config'
@@ -65,10 +65,19 @@ const Register = () => {
 return(
   <ScrollView>
   <View style = {styles.container}>
+  <Image
+    source={require('../assets/health-clipart-transparent-1.png')}
+    style = {{height: 80, width: 80, marginTop: 20, shadowColor: '#000',
+    shadowOffset: { width: 0, height: 0 },
+    shadowOpacity: .5,
+    shadowRadius: 3,
+    elevation: 25,}}>
+    </Image>
         <Text style={styles.Headline4}>Welcome to</Text>
         <Text style={styles.Healthify}>Healthify</Text>
-        <Text style={styles.Headline4}>Please Enter Your...</Text>
-        <View style = {{marginTop: 20}}>
+        <Text style={styles.Headline6}>Your ultimate health tracker</Text>
+        <Text style={styles.Headline5}>Please Enter Your...</Text>
+        <View style = {{marginTop: 10}}>
         <TextInput
             style={styles.textInput}
             placeholder="First Name"
@@ -98,10 +107,10 @@ return(
             secureTextEntry={true}
         />
         </View>
-        <View style = {{marginTop:20}}>
-        <Text style={styles.Headline4}>Let's get to know you...</Text>
+        <View style = {{marginTop:10}}>
+        <Text style={styles.Headline5}>Let's get to know you...</Text>
         </View>
-        <View style = {{marginTop: 20}}>
+        <View style = {{marginTop: 10}}>
         <TextInput
             style={styles.textInput}
             placeholder="Age"
@@ -221,6 +230,11 @@ const styles = StyleSheet.create({
       margin: 10,
       borderWidth: 1,
       borderColor: "black",
+      shadowColor: '#000',
+    shadowOffset: { width: 0, height: 0 },
+    shadowOpacity: .5,
+    shadowRadius: 3,
+    elevation: 25,
     },
     ButtonText:{
       fontFamily: "AvenirNext-Heavy",
@@ -250,6 +264,19 @@ const styles = StyleSheet.create({
       fontSize: 34,
       color: "#000",
       marginTop: 10,
+      alignItems: "center"
+    },
+    Headline5:{
+      fontFamily: "Avenir",
+      fontSize: 24,
+      color: "#000",
+      marginTop: 30,
+      alignItems: "center"
+    },
+    Headline6:{
+      fontFamily: "AvenirNext-Heavy",
+      fontSize: 20,
+      color: "#D5342B",
       alignItems: "center"
     },
     Headline4Courier:{

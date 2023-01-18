@@ -5,6 +5,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { useNavigation } from '@react-navigation/native'
 import {firebase} from '../config'
 import { ScrollView } from 'react-native-gesture-handler';
+import Emoji from 'react-native-emoji';
 
 const Weight = () => {
     const navigation = useNavigation()
@@ -62,7 +63,7 @@ const Weight = () => {
     <ScrollView>
     <View style = {{flex:1, justifyContent:'center', alignItems:'center'}}>
       <Text style={styles.headline4}>Current Weight</Text>
-      <Text style={styles.headline2Weight}>{weight}</Text>
+      <Text style={styles.headline2Weight}>{weight} <Emoji name="muscle" /></Text>
       <View style = {styles.newcontainer}>
       <Text style={styles.headline5}>Recommended Calories:</Text>
       <Text style={styles.headline4}>To Maintain Weight</Text>
@@ -99,9 +100,9 @@ const styles = StyleSheet.create({
     backgroundColor: '#FFF',
     marginBottom: 25,
     shadowColor: '#000',
-    shadowOffset: { width: 0, height: 2 },
+    shadowOffset: { width: 0, height: 0 },
     shadowOpacity: 1,
-    shadowRadius: 10,
+    shadowRadius: 5,
     elevation: 25,
     borderWidth: 2,
   borderColor: 'black',
@@ -164,7 +165,7 @@ const styles = StyleSheet.create({
     marginBottom: 30,
   },
   headline5:{
-    fontFamily: "Helvetica",
+    fontFamily: "Avenir",
     fontSize: 24,
     color: "#000",
     margin: 10,

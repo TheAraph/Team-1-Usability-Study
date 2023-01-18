@@ -20,25 +20,25 @@ const PersonalInfo = () => {
           component={() => (
             <View style = {{flex:1, justifyContent:'center', alignItems:'center'}}>
               <TouchableOpacity style = {styles.card} onPress = {() => nav.navigate('Profile')}>
-              <Image  
+              <View style={styles.rightContainer}><Image  
               source = {require('../assets/icons8-name-100.png')}
               style = {styles.image}>
-              </Image>
-                <Text style = {styles.btntext}>Profile</Text>
+              </Image></View>
+              <View style={styles.leftContainer}><Text style = {styles.btntext}>Profile</Text></View>
               </TouchableOpacity>
               <TouchableOpacity style = {styles.card} onPress = {() => nav.navigate('About')}>
-              <Image  
+              <View style={styles.rightContainer}><Image  
               source = {require('../assets/icons8-reading-100.png')}
               style = {styles.image}>
-              </Image>
-                <Text style = {styles.btntext}>About{'\n'}Healthify</Text>
+              </Image></View>
+              <View style={styles.leftContainer}><Text style = {styles.btntext}>About{'\n'}Healthify</Text></View>
               </TouchableOpacity>
               <TouchableOpacity style = {styles.card} onPress = {() => nav.navigate('Contact')}>
-              <Image  
+              <View style={styles.rightContainer}><Image  
               source = {require('../assets/icons8-mail-100.png')}
               style = {styles.image}>
-              </Image>
-                <Text style = {styles.btntext}>Contact</Text>
+              </Image></View>
+              <View style={styles.leftContainer}><Text style = {styles.btntext}>Contact</Text></View>
               </TouchableOpacity>
             </View>
           )}
@@ -91,7 +91,7 @@ const styles = StyleSheet.create({
     fontSize: 34,
     fontWeight: 'bold',
     color: '#fff',
-    right: 75
+    textAlign: "center"
   },
   button:{
     alignItems: 'center',
@@ -147,35 +147,51 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
   card:{
-      alignItems: 'center',
-      justifyContent: 'center',
-      width: 341,
-      height: 177, 
-      borderRadius: 30,
-      elevation: 3,
-      backgroundColor: '#D5342B',
-      marginBottom: 25,
-      shadowColor: '#000',
-      shadowOffset: { width: 0, height: 2 },
-      shadowOpacity: 1,
-      shadowRadius: 10,
-      elevation: 25,
-      borderWidth: 2,
-    borderColor: 'black',
-  },
-  rightContainer:{
-    backgroundColor: '#96d0e3'
-  },
-  image: {
-    position: 'absolute',
-    top: 35,
-    left: 200,
-    right: 0,
-    bottom: 0,
-    shadowColor: '#FFF',
-    shadowOffset: { width: 0, height: 0 },
-    shadowOpacity: 1,
-    shadowRadius: 1,
-    elevation: 25,
-  }
+    alignItems: 'center',
+    justifyContent: 'center',
+    width: 341,
+    height: 177, 
+    borderRadius: 30,
+    marginBottom: 25,
+    shadowColor: '#000',
+  shadowOffset: { width: 0, height: 0 },
+  shadowOpacity: 1,
+  shadowRadius: 5,
+  elevation: 25,
+    borderWidth: 2,
+  borderColor: 'black',
+  position: "relative"
+},
+leftContainer: {
+  position: 'absolute',
+  borderBottomLeftRadius: 30,
+  borderTopLeftRadius: 30,
+  left: 0,
+  width: '50%',
+  height: '100%',
+  backgroundColor: '#D5342B',
+  alignItems: 'center',
+  justifyContent: 'center',
+},
+rightContainer: {
+  position: 'absolute',
+  borderBottomRightRadius: 30,
+  borderTopRightRadius: 30,
+  right: 0,
+  width: '50%',
+  height: '100%',
+  backgroundColor: 'white',
+  alignItems: 'center',
+  justifyContent: 'center',
+},
+image: {
+  position: 'absolute',
+  width: 100,
+  height: 100,
+  shadowColor: '#000',
+  shadowOffset: { width: 0, height: 0 },
+  shadowOpacity: 0.5,
+  shadowRadius: 2,
+  elevation: 2,
+}
 })

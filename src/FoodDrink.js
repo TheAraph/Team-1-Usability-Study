@@ -5,6 +5,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { useNavigation } from '@react-navigation/native'
 import {firebase} from '../config'
 import { ScrollView } from 'react-native-gesture-handler';
+import Emoji from 'react-native-emoji';
 
 // const CurrentDate = () => {
 //   const today = new Date();
@@ -77,9 +78,9 @@ const FoodDrink = () => {
     <View style = {{flex:1, justifyContent:'center', alignItems:'center'}}>
       <View style={styles.newcontainer}>
       <Text style={styles.Headline4}>Calories Consumed</Text>
-      <Text style={styles.Headline2Black}>{caloriesConsumed}</Text>
+      <Text style={styles.Headline2Black}>{caloriesConsumed} <Emoji name="cherries" /></Text>
       <Text style={styles.Headline4}>Water Drank in Litres</Text>
-      <Text style={styles.Headline2Black}>{waterDrank}/{waterGoal}</Text>
+      <Text style={styles.Headline2Black}>{waterDrank}/{waterGoal} <Emoji name="droplet" /></Text>
       </View>
       <TouchableOpacity style = {styles.Button} onPress = {() => navigation.navigate('LogFood')}>
         <Text style = {styles.ButtonText}>Log Food</Text>
@@ -113,9 +114,9 @@ newcontainer:{
   backgroundColor: '#FFF',
   marginBottom: 25,
   shadowColor: '#000',
-  shadowOffset: { width: 0, height: 2 },
+  shadowOffset: { width: 0, height: 0 },
   shadowOpacity: 1,
-  shadowRadius: 10,
+  shadowRadius: 5,
   elevation: 25,
   borderWidth: 2,
 borderColor: 'black',

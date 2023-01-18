@@ -5,6 +5,7 @@ import {firebase} from '../config'
 import { Pedometer } from 'expo-sensors';
 import { ScrollView } from 'react-native-gesture-handler'
 import { RefreshControl } from 'react-native';
+import Emoji from 'react-native-emoji';
 
 //date functionality
 // const CurrentDate = () => {
@@ -96,15 +97,15 @@ const Home = () => {
         <View style={styles.container}>
         {/* <Text style={styles.Date}><CurrentDate /></Text> */}
           <Text style={styles.Healthify}>Welcome,</Text>
-          <Text style={styles.HealthifyUserName}>{name.firstName}</Text>
+          <Text style={styles.HealthifyUserName}>{name.firstName} <Emoji name="smiley" /></Text>
 
           <View style = {styles.newcontainer}>
         
           <Text style={styles.Headline4Courier}>Total Steps:</Text>
-          <Text style={styles.Headline2Black}>{stepCounter}</Text>
+          <Text style={styles.Headline2Black}>{stepCounter} <Emoji name="man-walking" /></Text>
         
           <Text style={styles.Headline4Courier}>Calories Lost</Text>
-          <Text style={styles.Headline2Black}>{caloriesLost}</Text>
+          <Text style={styles.Headline2Black}>{caloriesLost} <Emoji name="fire" /></Text>
           <TouchableOpacity style = {styles.Button2} onPress =  {resetValues}>
             <Text style = {styles.Button2Text}>Reset Steps and Calories</Text>
           </TouchableOpacity>
@@ -134,9 +135,9 @@ const styles = StyleSheet.create({
     backgroundColor: '#FFF',
     marginBottom: 25,
     shadowColor: '#000',
-    shadowOffset: { width: 0, height: 2 },
+    shadowOffset: { width: 0, height: 0 },
     shadowOpacity: 1,
-    shadowRadius: 10,
+    shadowRadius: 5,
     elevation: 25,
     borderWidth: 2,
   borderColor: 'black',
@@ -182,11 +183,11 @@ const styles = StyleSheet.create({
     HealthifyUserName:{
       fontFamily: "AvenirNext-Heavy",
       fontSize: 61,
-      color: "#E2716B",
+      color: "#D5342B",
       fontWeight: 'bold',
       shadowColor: '#000',
       shadowOffset: { width: 0, height: 0 },
-      shadowOpacity: .2,
+      shadowOpacity: .1,
       shadowRadius: 5,
       elevation: 25,
     },

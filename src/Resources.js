@@ -138,10 +138,10 @@ const styles = StyleSheet.create({
     },
     card1: {
       shadowColor: '#000',
-      shadowOffset: { width: 0, height: 2 },
-      shadowOpacity: 1,
-      shadowRadius: 10,
-      elevation: 25,
+    shadowOffset: { width: 0, height: 0 },
+    shadowOpacity: .5,
+    shadowRadius: 5,
+    elevation: 25,
       width: 341,
       height: 177,
       padding: 40,
@@ -155,6 +155,7 @@ const styles = StyleSheet.create({
     },
     image: {
       position: 'absolute',
+      overflow: "hidden",
       top: 0,
       left: 0,
       right: 0,
